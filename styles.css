@@ -11,7 +11,17 @@ html{
 }
 
 ::-webkit-scrollbar{
-    width: 5px;
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: gray; 
+}
+::-webkit-scrollbar-thumb {
+    background: orangered; 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(160, 43, 0); 
 }
 nav.sticky{
     padding: 10px 70px;
@@ -191,6 +201,9 @@ nav ul li a:hover{
         padding-top: 50px;
         flex-direction: column;
         align-items: center;
+    }
+    .title{
+        width: 90%;
     }
 }
 .educards{
