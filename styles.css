@@ -91,14 +91,15 @@ nav ul li a:hover{
     border-radius: 10px;
     transition: 600ms ease-in-out;
 }
+.intro .btn{
+    /* text-align: center; */
+}
 .intro .btn a{
     font-family: 'Press Start 2P', cursive;
     font-size: 24px;
     font-weight: 600;
     bottom: 30px;
-    left: 45%;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
+    left: 44%;
     position: absolute;
     padding: 0.4em 0.7em;
     background-color: yellow;
@@ -120,18 +121,11 @@ nav ul li a:hover{
     opacity: 0.4;
     transform:rotate(45deg);
     transition: all ease 1s;
-
 }
 .btn a:hover::before{
     left: 100%;
 }
-/* .blank{
-    padding-top: 100px;
-} */
 .about{
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    /* font-family: 'Open Sans', sans-serif; */
-    /* width: 100%; */
     justify-content: center;
     position: relative;
     display: flex;
@@ -139,8 +133,6 @@ nav ul li a:hover{
     text-align: center;
     min-height: 100vh;
     background-color: rgb(214, 214, 214);
-    /* flex-wrap: wrap; */
-
 }
 .about .sodhi{
     justify-content: space-between;
@@ -160,14 +152,11 @@ nav ul li a:hover{
 .about .sodhi .content{
     padding:50px 30px;
     margin-left: 20px;
-    /* color: yellow;
-    background-color: rgba(0, 0, 0, 0.938); */
     border-radius: 15px;
 }
 .about h1{
     font-size: 60px;
     font-family: 'Open Sans', sans-serif;
-
 }
 .about h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -214,8 +203,6 @@ nav ul li a:hover{
 }
 .educards .educard{
     background-color: #030e13;
-    /* background-color: rgb(223, 129, 22); */
-    /* border: 7px solid #031c27; */
     border: 7px solid #030e13;
     width: 510px;
     box-shadow: rgba(253, 159, 51, 0.568) 0px 8px 24px;
@@ -260,7 +247,6 @@ nav ul li a:hover{
     width: 150px;
     padding: 2px 5px;
     border-radius: 15px;
-    /* background-color: #1e7296; */
     background-color: rgb(160, 45, 4);
 }
 @media (max-width: 1400px){
@@ -277,12 +263,18 @@ nav ul li a:hover{
         /* justify-content: center; */
         align-items: center;
     }
+    .foot .social{
+        margin-left: 60px;
+    }
     .skills{
         padding-top: 50px;
         padding-bottom: 50px;
     }
     .educards .educard:hover{
         transform: scale(1);
+    }
+    .intro .btn a{
+        left: 34%;
     }
 }
 .skills{
