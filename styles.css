@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');    
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+nav.sticky{
+    padding: 10px 70px;
+    background:rgba(24, 24, 24, 0.89);
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transition: 0.4s;
+    padding: 40px 50px;
+    z-index: 100000;
+}
+nav ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    position: relative;
+    list-style: none;
+}
+nav ul li a{
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+    text-decoration: none;
+    color: grey;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    color: white;
+    text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.76);
+    transition: .1s ease-in-out;
+}
+.under::after{
+    padding-left: 0;
+    position: absolute;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    bottom: 0%;
+    left: 50%;
+    background: rgb(228, 118, 28);
+    box-shadow: 0 0 0.1em rgba(252, 43, 43, 0.76);
+    transition: all .3s ease-in-out;
+}
+.under:hover::after{
+    left: 0%;
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+.intro{
+    padding-top: 35vh;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    height: 100vh;
+}
+.title{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 7px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    transition: 1s ease;
+}
+.title:hover{
+    border: 7px solid white;
+    border-radius: 10px;
+    transition: 600ms ease-in-out;
+}
+.intro .btn a{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    font-weight: 600;
+    bottom: 30px;
+    left: 45%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    position: absolute;
+    padding: 0.4em 0.7em;
+    background-color: yellow;
+    border-radius:0.1em;
+    box-sizing: border-box;
+    text-decoration:none;
+    color: black;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+.btn a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 150%;
+    height: 125%;
+    background-color: #fff;
+    opacity: 0.4;
+    transform:rotate(45deg);
+    transition: all ease 1s;
+
+}
+.btn a:hover::before{
+    left: 100%;
+}
+/* .blank{
+    padding-top: 100px;
+} */
+.about{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    /* width: 100%; */
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: rgb(214, 214, 214);
+    /* flex-wrap: wrap; */
+
+}
+.about .sodhi{
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    max-width: 1000px;
+}
+.about .sodhi .propic{
+    max-width: 300px;
+    flex: 0 0 300px;
+}
+.about .sodhi .propic img{
+    border-radius: 50%;
+    border: 5px solid rgb(68, 68, 68);
+    max-width: 100%;
+}
+.about .sodhi .content{
+    padding:50px 30px;
+    margin-left: 20px;
+    /* color: yellow;
+    background-color: rgba(0, 0, 0, 0.938); */
+    border-radius: 15px;
+}
+.about h1{
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.about h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.about .downl{
+    padding-top: 50px;
+}
+.about .downl a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(9, 18, 39);
+    border-radius: 3px;
+    border-bottom: 4px solid orangered;
+    transition: .3s ease;
+}
+.about .downl a i{
+    color: orangered;
+}
+.about .downl a:hover{
+    background-color: rgb(5, 19, 59);
+    border-bottom: 4px solid rgb(255, 38, 0);
+    transition: .3s ease;
+}
+@media (max-width:1000px){
+    .sodhi{
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.educards{
+    /* background-color: #154155; */
+    background-color: #a55f26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.educards .educard{
+    background-color: #030e13;
+    /* background-color: rgb(223, 129, 22); */
+    /* border: 7px solid #031c27; */
+    border: 7px solid #030e13;
+    width: 510px;
+    box-shadow: rgba(253, 159, 51, 0.568) 0px 8px 24px;
+    border-radius: 5px;
+    margin: 30px 30px;
+    transition: 0.3s ease;
+}
+.educards .educard:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+.educards .educard img{
+    border-radius: 2px 2px 0 0;
+    width: 100%;
+    max-height: 300px;
+}
+.educards .educard .edudetails{
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px 20px;
+}
+.edudetails h2{
+    /* color: #34ace0; */
+    color: orangered;
+    font-size: 20px;
+    font-weight: 550;
+}
+.edudetails h3,.edudetails p{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+.educards .educard .time{
+    margin-top: -17px;
+    text-align: center;
+    justify-content: center;
+}
+.time p{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 150px;
+    padding: 2px 5px;
+    border-radius: 15px;
+    /* background-color: #1e7296; */
+    background-color: rgb(160, 45, 4);
+}
+@media (max-width: 1400px){
+    .educards{
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .foot{
+        /* padding: 20px 0; */
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .skills{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .educards .educard:hover{
+        transform: scale(1);
+    }
+}
+.skills{
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    background-color: rgb(214, 214, 214);
+    /* align-items: center; */
+}
+.skills h1{
+    font-size: 36px;
+    font-weight: 400;
+    text-decoration: underline orangered;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.skills li{
+    list-style: none;
+    font-size: 24px;
+    line-height: 2;
+}
+.skills li label{
+    font-weight: 550;
+    color: black;
+}
+.skills li{
+    color: rgb(128, 79, 62);
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    min-height: 45vh;
+    background-color: #191919;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+    /* text-decoration: none; */
+}
+.arrow{
+    /* display: flex; */
+    padding-left: 48%;
+    position: absolute;
+    text-align: center;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* width: 20px; */
+    font-size: 45px;
+    margin-top: -20px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* color: blanchedalmond; */
+}
+.arrow a{
+    /* position: absolute; */
+    padding: 1px 4px;
+    border: 2px solid #191919;
+    border-radius: 50%;
+    background-color: #191919;
+    color: rgb(190, 69, 25);
+}
+.foot h1{
+    color: rgb(0, 0, 0);
+}
+.foot li{
+    list-style: none;
+    line-height: 2;
+}
+.foot li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    transition: .2s;
+}
+.foot li a:hover{
+    color: orangered;
+    transition: .2s;
+}
+.foot .social,.foot .eduplatforms{
+    padding: 30px 40px;
+}
+footer{
+    font-family: 'Press Start 2P', cursive;
+    bottom: 5px;
+    text-align: center;
+    min-height: 5vh;
+    background-color: #191919;
+    color: #30bdbd;
+}
