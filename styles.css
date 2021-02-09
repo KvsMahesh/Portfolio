@@ -9,7 +9,6 @@ html{
     margin: 0px;
     padding: 0px;
 }
-
 ::-webkit-scrollbar{
     width: 7px;
 }
@@ -22,6 +21,70 @@ html{
 }
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(160, 43, 0); 
+}
+.navbar{
+    font-family: 'Poppins', sans-serif;
+    width: 300px;
+    height: 500px;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right .5s cubic-bezier(1,0,0,1);
+    z-index: 100000;
+}
+.change{
+    right: 0;
+}
+.navlist{
+    text-align: right;
+}
+.navitem{
+    list-style: none;
+    margin: 25px;
+}
+.navlink{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: white;
+}
+.hamenu{
+    width:40px;
+    height: 35px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    /* background-color: red; */
+    background-color: #191919;
+    border-radius: 4px;
+    padding: 5px 5px;
+    /* margin: 2px; */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.line{
+    width: 100%;
+    height: 3px;
+    transition: all .5s;
+    background-color: orangered;
+    border-radius: 2px;
+}
+.change .line-1{
+    transform: rotateZ(-405deg) translate(-7px,5px);
+}
+.change .line-3{
+    transform: rotateZ(405deg) translate(-7px,-5px);
+}
+.change .line-2{
+    opacity: 0;
+}
+.navbar{
+    display: none;
 }
 nav.sticky{
     padding: 10px 70px;
@@ -56,7 +119,7 @@ nav ul li a{
     color: grey;
     font-weight: 500;
 }
-nav ul li a:hover{
+nav ul li a:hover,nav ul li a:active{
     color: white;
     text-shadow: 0 0 0.1em rgba(255, 255, 255, 0.76);
     transition: .1s ease-in-out;
@@ -101,9 +164,6 @@ nav ul li a:hover{
     border-radius: 10px;
     transition: 600ms ease-in-out;
 }
-/* .intro .btn{
-    text-align: center;
-} */
 .intro .btn a{
     font-family: 'Press Start 2P', cursive;
     font-size: 24px;
@@ -137,7 +197,7 @@ nav ul li a:hover{
 }
 .about{
     justify-content: center;
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
     text-align: center;
@@ -206,9 +266,45 @@ nav ul li a:hover{
         width: 90%;
     }
 }
+.tehc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: rgb(214, 214, 214);
+    background-image: linear-gradient(rgb(214, 214, 214),#c2702d);
+}
+.contentio{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 90px;
+    grid-row-gap:50px;
+}
+.contentio h1{
+    padding-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+.techimg{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+
+}
+.tehc img{
+    transition: 0.1s ease;
+}
+.tehc img:hover{
+    transform: translateY(-7px);
+    /* transform: scale(1.1); */
+    transition: 0.1s ease;
+}
+
 .educards{
     /* background-color: #154155; */
-    background-color: #a55f26;
+    background-color: #c2702d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,13 +314,9 @@ nav ul li a:hover{
     background-color: #030e13;
     border: 7px solid #030e13;
     width: 510px;
-    box-shadow: rgba(253, 159, 51, 0.568) 0px 8px 24px;
+    /* box-shadow: rgba(253, 159, 51, 0.568) 0px 8px 24px; */
     border-radius: 5px;
     margin: 30px 30px;
-    transition: 0.3s ease;
-}
-.educards .educard:hover{
-    transform: scale(1.05);
     transition: 0.3s ease;
 }
 .educards .educard img{
@@ -262,7 +354,18 @@ nav ul li a:hover{
     border-radius: 15px;
     background-color: rgb(160, 45, 4);
 }
+.educards .educard:hover{
+    position: relative;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
 @media (max-width: 1400px){
+    .navbar{
+        display: flex;
+    }
+    nav{
+        display: none;
+    }
     .educards{
         flex-direction: column;
         padding-top: 50px;
@@ -271,9 +374,7 @@ nav ul li a:hover{
         max-width: 90%;
     }
     .foot{
-        /* padding: 20px 0; */
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
     }
     .foot .social{
@@ -289,6 +390,13 @@ nav ul li a:hover{
     .intro .btn a{
         left: 34%;
     }
+    .tehc{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .contentio{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 .skills{
     min-height: 100vh;
@@ -298,7 +406,6 @@ nav ul li a:hover{
     justify-content: center;
     padding-left: 50px;
     background-color: rgb(214, 214, 214);
-    /* align-items: center; */
 }
 .skills h1{
     font-size: 36px;
@@ -326,29 +433,20 @@ nav ul li a:hover{
     background-color: #191919;
     font-family: 'Open Sans', sans-serif;
     padding-top: 20px;
-    /* text-decoration: none; */
 }
 .arrow{
-    /* display: flex; */
     padding-left: 48%;
     position: absolute;
     text-align: center;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    /* width: 20px; */
     font-size: 45px;
     margin-top: -20px;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* color: blanchedalmond; */
 }
 .arrow a{
-    /* position: absolute; */
-    padding: 1px 4px;
-    border: 2px solid #191919;
+    padding: 1px 2px;
+    border: 3px solid #191919;
     border-radius: 50%;
     background-color: #191919;
-    color: rgb(190, 69, 25);
+    color: orangered;
 }
 .foot h1{
     color: rgb(0, 0, 0);
