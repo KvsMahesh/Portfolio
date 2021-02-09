@@ -59,8 +59,8 @@ html{
     right: 0px;
     /* background-color: red; */
     background-color: #191919;
-    /* border-radius: 4px; */
-    padding: 5px 5px 5px 5px;
+    border-radius: 4px 0 0 4px;
+    padding: 5px 0px 5px 5px;
     /* margin: 2px; */
     cursor: pointer;
     display: flex;
