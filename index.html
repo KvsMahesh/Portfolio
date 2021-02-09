@@ -11,11 +11,28 @@
 </head>
 <body>
 <!-- navbar -->
+    <div class="navbar">
+        <div class="hamenu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+        <ul class="navlist">
+            <li class="navitem"><a href="#" class="navlink">HOME</a></li>
+            <li class="navitem"><a href="#about" class="navlink">ABOUT</a></li>
+            <li class="navitem"><a href="#skills" class="navlink">SKILLS</a></li>
+            <li class="navitem"><a href="#education" class="navlink">EDUCATION</a></li>
+            <li class="navitem"><a href="#projects" class="navlink">PROJECTS</a></li>
+            <li class="navitem"><a href="#contact" class="navlink">CONTACT</a></li>
+        </ul>
+    </div>
+
     <nav>
         <ul>
             <li><a href="#about" class="under">ABOUT</a></li>
-            <li><a href="#education" class="under">EDUCATION</a></li>
             <li><a href="#skills" class="under">SKILLS</a></li>
+            <li><a href="#education" class="under">EDUCATION</a></li>
+            <li><a href="#projects" class="under">PROJECTS</a></li>
             <li><a href="#contact" class="under">CONTACT</a></li>
         </ul>
     </nav>
@@ -24,6 +41,7 @@
 <!-- intro -->
     <div class="intro">
         <img src="images/logow.png" alt="" class="title">
+        
         <div class="btn"><a href="#about">START</a></div>
     </div>
 <!-- /intro -->
@@ -39,12 +57,75 @@
                 <h3>I'm currently in my pre-final year, pursuing B.Tech in Computer Science and Engineering at IIITDM Kancheepuram.
                      I am a Competitive programmer and participate in contests held on different platforms.</h3>
 
-                <div class="downl"><a href="resume.pdf" target="_blank">Download resume  <i class="fas fa-external-link-alt"></i></a></div>
+                <div class="downl"><a href="C:\Users\91949\Desktop\shit\Duplicate\resume.pdf" target="_blank">Download resume  <i class="fas fa-external-link-alt"></i></a></div>
             </div>
         </div>
     </div>
-        
 <!-- /about -->
+
+<!-- skills -->
+<div class="tehc" id="skills">
+    <!-- <h1>Technologies</h1> -->
+    <div class="contentio">
+        <div class="logo">
+            <img src="images/cpp.jpg" alt="" class="techimg">
+            <h1>C++</h1>
+        </div>
+        <div class="logo">
+            <img src="images/c.png" alt="" class="techimg">
+            <h1>C</h1>
+        </div>
+        <div class="logo">
+            <img src="images/html.png" alt="" class="techimg">
+            <h1>HTML</h1>
+        </div>
+        <div class="logo">
+            <img src="images/css.png" alt="" class="techimg">
+            <h1>CSS</h1>
+        </div>
+        <div class="logo">
+            <img src="images/python.jpg" alt="" class="techimg">
+            <h1>Python</h1>
+        </div>
+        <div class="logo">
+            <img src="images/numpy.jpg" alt="" class="techimg">
+            <h1>NumPy</h1>
+        </div>
+        <div class="logo">
+            <img src="images/pandas.png" alt="" class="techimg">
+            <h1>Pandas</h1>
+        </div>
+        <div class="logo">
+            <img src="images/bootstrap.png" alt="" class="techimg">
+            <h1>Bootstrap</h1>
+        </div>
+        <div class="logo">
+            <img src="images/flask.png" alt="" class="techimg">
+            <h1>Flask</h1>
+        </div>
+        <div class="logo">
+            <img src="images/git.png" alt="" class="techimg">
+            <h1>Git</h1>
+        </div>
+        <div class="logo">
+            <img src="images/mysql.png" alt="" class="techimg">
+            <h1>MySQL</h1>
+        </div>
+        <div class="logo">
+            <img src="images/autocad.jpg" alt="" class="techimg">
+            <h1>Autocad</h1>
+        </div>
+        <div class="logo">
+            <img src="images/sketchbook.jpg" alt="" class="techimg">
+            <h1>Sketchbook</h1>
+        </div>
+        <div class="logo">
+            <img src="images/fusion.jpg" alt="" class="techimg">
+            <h1>Fusion360</h1>
+        </div>
+    </div>
+</div>
+<!-- /skills -->
 
 <!-- edu -->
 
@@ -86,7 +167,7 @@
 
 <!-- /edu -->
 <!-- skills -->
-<div class="skills" id="skills">
+<div class="skills" id="projects">
     <div class="skil">
     <h1>Skills</h1>
     <ul>
@@ -101,7 +182,7 @@
         <li><label for="">NPTEL Courses: </label>2</li>
         <li><label for="">Coursera Courses: </label>4</li>
         <li><label for="">Workshops: </label>1</li>
-        <li><label for="">Competitions: </label>Won Rope climbing Robot competition at IIITDM</li>
+        <li><label for="">NPTEL Courses: </label>2</li>
     </ul>
     </div>
 </div>
@@ -137,15 +218,7 @@
 <footer>
     <p>Hancrafted by Mahesh in 2021</p>
 </footer>
+    <script src="script.js"></script>
 
-
-
-
-    <script type="text/javascript">
-        window.addEventListener("scroll",function(){
-        var nav = document.querySelector("nav");
-        nav.classList.toggle("sticky", window.scrollY > 0 );
-        })
-    </script>
 </body>
 </html>
