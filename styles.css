@@ -508,3 +508,50 @@ footer{
     background-color: #191919;
     color: #30bdbd;
 }
+
+.loading {
+    z-index: 100000000000000;
+    background-color: #030e13;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.loading svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#infinity-outline {
+    fill: transparent;
+    stroke-width: 4;
+    stroke: orangered;
+    stroke-dasharray: 3px, 300px;
+    stroke-dashoffset: 0;
+    animation: anim 3000ms linear infinite;
+}
+#infinity-bg {
+    fill: transparent;
+    stroke-width: 4;
+    stroke: #424242;
+    opacity: 0.2;
+}
+@keyframes anim {
+    12.5% {
+        stroke-dasharray: 42px, 300px;
+        stroke-dashoffset: -33px;
+   }
+    43.75% {
+        stroke-dasharray: 105px, 300px;
+        stroke-dashoffset: -105px;
+   }
+    100% {
+        stroke-dasharray: 3px, 300px;
+        stroke-dashoffset: -297px;
+   }
+}
