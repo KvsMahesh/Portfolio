@@ -419,6 +419,7 @@ nav ul li a:hover,nav ul li a:active{
     flex-direction: column;
     justify-content: center;
     padding-left: 50px;
+    padding-bottom: 70px;    
     background-color: rgb(214, 214, 214);
 }
 .skills h1{
@@ -441,6 +442,7 @@ nav ul li a:hover,nav ul li a:active{
     color: rgb(128, 79, 62);
 }
 .skills li li{
+    margin-left: 20px;
     list-style-type: disc;
 }
 .foot{
