@@ -257,6 +257,11 @@ nav ul li a:hover,nav ul li a:active{
     /* box-shadow: 0 8px 8px 0 gray, 0 6px 10px 0 gray; */
 
 }
+.about .downl img{
+    padding-left: 5px;
+    height: 20px;
+    width: auto;
+}
 .about .downl a i{
     color: orangered;
 }
@@ -435,6 +440,9 @@ nav ul li a:hover,nav ul li a:active{
 .skills li{
     color: rgb(128, 79, 62);
 }
+.skills li li{
+    list-style-type: disc;
+}
 .foot{
     display: flex;
     justify-content: center;
@@ -470,9 +478,21 @@ nav ul li a:hover,nav ul li a:active{
     font-size: 20px;
     transition: .2s;
 }
+.foot .iccon{
+    filter: grayscale(100%) invert(90%);
+}
+/* .foot li .iccon:hover{
+} */
+.foot li img{
+    height: 20px;
+    width: auto;
+    
+}
 .foot li a:hover{
-    color: orangered;
+    /* color: orangered; */
+    color: gray;
     transition: .2s;
+    filter: brightness(0.3) invert(90%) sepia() saturate(50%);
 }
 .foot .social,.foot .eduplatforms{
     padding: 30px 40px;
