@@ -512,7 +512,7 @@ footer{
 .loading {
     z-index: 100000000000000;
     background-color: #030e13;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
