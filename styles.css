@@ -216,6 +216,10 @@ nav ul li a:hover,nav ul li a:active{
     position: relative;
     max-width: 1000px;
 }
+
+#particles-js{
+    height: 100vh;
+}
 .about .sodhi .propic{
     max-width: 300px;
     flex: 0 0 300px;
