@@ -1,6 +1,6 @@
 # Personal Portfolio - Mahesh K V S
 
-**Live Site:** [https://kvsmahesh.github.io/Portfolio/](https://kvsmahesh.github.io/Portfolio/)
+**Live Site:** [https://kvsmahesh.github.io](https://kvsmahesh.github.io)
 
 ## What is this?
 
@@ -24,7 +24,7 @@ This repository contains the source code for my personal portfolio website.
 
 1.  **Clone:**
     ```bash
-    git clone [https://github.com/kvsmahesh/Portfolio.git](https://github.com/kvsmahesh/Portfolio.git)
+    git clone [https://github.com/KvsMahesh/kvsmahesh.github.io.git](https://github.com/KvsMahesh/kvsmahesh.github.io.git)
     ```
     *(Adjust URL if needed)*
 2.  **Navigate:**
