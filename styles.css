@@ -607,7 +607,7 @@ footer{
     stroke: orangered;
     stroke-dasharray: 3px, 300px;
     stroke-dashoffset: 0;
-    animation: anim 3000ms linear infinite;
+    animation: anim 1000ms linear infinite;
 }
 #infinity-bg {
     fill: transparent;

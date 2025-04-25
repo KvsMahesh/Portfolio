@@ -10,5 +10,5 @@ window.addEventListener("scroll",function(){
     nav.classList.toggle("sticky", window.scrollY > 0 );
     })
 window.addEventListener('load',
-    setTimeout(function(){document.querySelector('.load-wrap').style.display = 'none';},200)
+    setTimeout(function(){document.querySelector('.load-wrap').style.display = 'none';},2000)
 );
